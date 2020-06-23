@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	563831013	OdaNobunaga_Neutral_HELLO			\Default Work Unit\OdaNobunaga_Neutral_HELLO	
+	708564847	OdaNobunaga_INTRO			\Default Work Unit\OdaNobunaga_INTRO	
+	1524946589	OdaNobunaga_Hate_ATTACKED			\Default Work Unit\OdaNobunaga_Hate_ATTACKED	
+	1773249430	OdaNobunaga_Hate_HELLO			\Default Work Unit\OdaNobunaga_Hate_HELLO	
+	1779925548	ArmorOda			\Default Work Unit\ArmorOda	
+	1960329576	OdaNobunaga_DECLARE_WAR			\Default Work Unit\OdaNobunaga_DECLARE_WAR	
+	3811461121	OdaNobunaga_DEFEATED			\Default Work Unit\OdaNobunaga_DEFEATED	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	94290563	armoroda-002	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\armoroda-002_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\ArmorOda\armoroda-002		14302
+	280048615	armoroda-000	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\armoroda-000_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\ArmorOda\armoroda-000		12268
+	338807086	OdaNobunaga_Hate_ATTACKED	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\OdaNobunaga_Hate_ATTACKED_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\OdaNobunaga_Hate_ATTACKED		511646
+	463225033	armoroda-001	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\armoroda-001_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\ArmorOda\armoroda-001		16336
+	508459021	OdaNobunaga_Hate_HELLO	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\OdaNobunaga_Hate_HELLO_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\OdaNobunaga_Hate_HELLO		207518
+	536341525	armoroda-003	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\armoroda-003_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\ArmorOda\armoroda-003		16336
+	651010633	OdaNobunaga_DECLARE_WAR	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\OdaNobunaga_DECLARE_WAR_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\OdaNobunaga_DECLARE_WAR		656798
+	668211187	OdaNobunaga_INTRO	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\OdaNobunaga_INTRO_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\OdaNobunaga_INTRO		875678
+	806026940	OdaNobunaga_Neutral_HELLO	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\OdaNobunaga_Neutral_HELLO_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\OdaNobunaga_Neutral_HELLO		87710
+	818873011	OdaNobunaga_DEFEATED	C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\SFX\OdaNobunaga_DEFEATED_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Speech\Speech_Master\LeaderSpeech\Oda\OdaNobunaga_DEFEATED		359582
+

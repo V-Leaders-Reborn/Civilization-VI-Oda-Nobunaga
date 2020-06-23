@@ -18,12 +18,33 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>Oda Nobunaga</AssemblyName>
     <RootNamespace>Oda Nobunaga</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="LeaderArtOda"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateAudio id="AddAudioOda"><File>Platforms/Windows/Audio/Oda_Audio.bnk</File><File>Platforms/Windows/Audio/Oda_Audio.ini</File><File>Platforms/Windows/Audio/Oda_Audio.txt</File><File>Platforms/Windows/Audio/Oda_Audio.xml</File></UpdateAudio></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="LeaderArtOda"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Oda Nobunaga.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Platforms" />
+    <Folder Include="Platforms\Windows" />
+    <Folder Include="Platforms\Windows\Audio" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Platforms\Windows\Audio\Oda_Audio.bnk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Platforms\Windows\Audio\Oda_Audio.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Platforms\Windows\Audio\Oda_Audio.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Platforms\Windows\Audio\Oda_Audio.xml">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>

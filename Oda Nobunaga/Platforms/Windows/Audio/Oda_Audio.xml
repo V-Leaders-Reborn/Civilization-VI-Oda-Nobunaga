@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Simon\Documents\WwiseProjects\Oda Nobunaga\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1223130022" Language="SFX">
+			<ShortName>Oda_Audio</ShortName>
+			<Path>Oda_Audio.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1779925548" Name="ArmorOda"/>
+				<Event Id="1960329576" Name="OdaNobunaga_DECLARE_WAR"/>
+				<Event Id="3811461121" Name="OdaNobunaga_DEFEATED"/>
+				<Event Id="1524946589" Name="OdaNobunaga_Hate_ATTACKED"/>
+				<Event Id="1773249430" Name="OdaNobunaga_Hate_HELLO"/>
+				<Event Id="708564847" Name="OdaNobunaga_INTRO"/>
+				<Event Id="563831013" Name="OdaNobunaga_Neutral_HELLO"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="94290563" Language="SFX">
+					<ShortName>armoroda-002.wav</ShortName>
+					<Path>SFX\armoroda-002_9E69E797.wem</Path>
+				</File>
+				<File Id="280048615" Language="SFX">
+					<ShortName>armoroda-000.wav</ShortName>
+					<Path>SFX\armoroda-000_9E69E797.wem</Path>
+				</File>
+				<File Id="338807086" Language="SFX">
+					<ShortName>OdaNobunaga_Hate_ATTACKED.wav</ShortName>
+					<Path>SFX\OdaNobunaga_Hate_ATTACKED_9E69E797.wem</Path>
+				</File>
+				<File Id="463225033" Language="SFX">
+					<ShortName>armoroda-001.wav</ShortName>
+					<Path>SFX\armoroda-001_9E69E797.wem</Path>
+				</File>
+				<File Id="508459021" Language="SFX">
+					<ShortName>OdaNobunaga_Hate_HELLO.wav</ShortName>
+					<Path>SFX\OdaNobunaga_Hate_HELLO_9E69E797.wem</Path>
+				</File>
+				<File Id="536341525" Language="SFX">
+					<ShortName>armoroda-003.wav</ShortName>
+					<Path>SFX\armoroda-003_9E69E797.wem</Path>
+				</File>
+				<File Id="651010633" Language="SFX">
+					<ShortName>OdaNobunaga_DECLARE_WAR.wav</ShortName>
+					<Path>SFX\OdaNobunaga_DECLARE_WAR_9E69E797.wem</Path>
+				</File>
+				<File Id="668211187" Language="SFX">
+					<ShortName>OdaNobunaga_INTRO.wav</ShortName>
+					<Path>SFX\OdaNobunaga_INTRO_9E69E797.wem</Path>
+				</File>
+				<File Id="806026940" Language="SFX">
+					<ShortName>OdaNobunaga_Neutral_HELLO.wav</ShortName>
+					<Path>SFX\OdaNobunaga_Neutral_HELLO_9E69E797.wem</Path>
+				</File>
+				<File Id="818873011" Language="SFX">
+					<ShortName>OdaNobunaga_DEFEATED.wav</ShortName>
+					<Path>SFX\OdaNobunaga_DEFEATED_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
