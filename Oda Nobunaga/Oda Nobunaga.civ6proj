@@ -18,8 +18,8 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
     <AssemblyName>Oda Nobunaga</AssemblyName>
     <RootNamespace>Oda Nobunaga</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="LeaderArtOda"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateAudio id="AddAudioOda"><File>Platforms/Windows/Audio/Oda_Audio.bnk</File><File>Platforms/Windows/Audio/Oda_Audio.ini</File><File>Platforms/Windows/Audio/Oda_Audio.txt</File><File>Platforms/Windows/Audio/Oda_Audio.xml</File></UpdateAudio></InGameActions>]]></InGameActionData>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="LeaderArtOda"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateArt id="LeaderArtOda"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateAudio id="AddAudioOda"><File>Platforms/Windows/Audio/Oda_Audio.bnk</File><File>Platforms/Windows/Audio/Oda_Audio.ini</File><File>Platforms/Windows/Audio/Oda_Audio.txt</File><File>Platforms/Windows/Audio/Oda_Audio.xml</File></UpdateAudio><UpdateDatabase id="Oda_db"><File>Core/VLR_Oda_Defines.sql</File><File>Core/VLR_Oda_Traits.sql</File></UpdateDatabase><UpdateText id="Oda_txt"><File>Core/VLR_Oda_Text.xml</File></UpdateText><UpdateColors id="Oda_colors"><File>Core/VLR_Oda_Colors.sql</File></UpdateColors></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateArt id="LeaderArtOda"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateDatabase id="Oda_config"><File>Core/VLR_Oda_Config.sql</File></UpdateDatabase><UpdateText id="Oda_txt"><File>Core/VLR_Oda_Text.xml</File></UpdateText><UpdateColors id="Oda_colors"><File>Core/VLR_Oda_Colors.sql</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -28,11 +28,36 @@
     <None Include="Oda Nobunaga.Art.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Core" />
+    <Folder Include="Artdefs" />
+    <Folder Include="Icons" />
+    <Folder Include="XLPs" />
     <Folder Include="Platforms" />
     <Folder Include="Platforms\Windows" />
     <Folder Include="Platforms\Windows\Audio" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Core\VLR_Oda_Agenda.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\VLR_Oda_AI.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\VLR_Oda_Colors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\VLR_Oda_Config.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\VLR_Oda_Defines.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\VLR_Oda_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\VLR_Oda_Traits.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Platforms\Windows\Audio\Oda_Audio.bnk">
       <SubType>Content</SubType>
     </Content>
