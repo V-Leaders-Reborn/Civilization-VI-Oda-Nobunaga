@@ -37,6 +37,9 @@
     <Folder Include="Platforms\Windows\Audio" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Artdefs\Leaders.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Core\VLR_Oda_Agenda.sql">
       <SubType>Content</SubType>
     </Content>
