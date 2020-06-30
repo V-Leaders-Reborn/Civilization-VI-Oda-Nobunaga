@@ -42,7 +42,7 @@ function Sailor_Oda_Gunpowder_Switcheroo (player, eTech)
 
 						--///// Unit replacement...
 						local iUnitX, iUnitY = pIterUnit:GetX(), pIterUnit:GetY()
-						pPlayerUnits:Destroy(pIterUnit)
+						--pPlayerUnits:Destroy(pIterUnit)
 						local pUnit = pPlayerUnits:Create(sailorSwitcherooGunner, iUnitX, iUnitY)
 						print(pUnit)
 
