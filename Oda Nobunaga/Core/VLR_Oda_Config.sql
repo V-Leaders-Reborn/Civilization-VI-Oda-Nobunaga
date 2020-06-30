@@ -66,11 +66,28 @@ INSERT INTO PlayerItems	(
 		)
 VALUES	('CIVILIZATION_JAPAN',
 		'LEADER_VLR_ODA',
+		'UNIT_VLR_ODA_UU',
+		'ICON_UNIT_VLR_ODA_UU',
+		'LOC_UNIT_VLR_ODA_UU_NAME',
+		'LOC_UNIT_VLR_ODA_UU_DESCRIPTION',
+		20);
+
+INSERT INTO PlayerItems	(
+		CivilizationType,
+		LeaderType,
+		Type,
+		Icon,
+		Name,
+		Description,
+		SortIndex
+		)
+VALUES	('CIVILIZATION_JAPAN',
+		'LEADER_VLR_ODA',
 		'BUILDING_ELECTRONICS_FACTORY',
 		'ICON_BUILDING_ELECTRONICS_FACTORY',
 		'LOC_BUILDING_ELECTRONICS_FACTORY_NAME',
 		'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION',
-		20);
+		30);
 
 -----------------------------------------------		
 -- Players Expansion
@@ -143,11 +160,30 @@ INSERT INTO PlayerItems	(
 VALUES	('Players:Expansion1_Players',
 		'CIVILIZATION_JAPAN',
 		'LEADER_VLR_ODA',
+		'UNIT_VLR_ODA_UU',
+		'ICON_UNIT_VLR_ODA_UU',
+		'LOC_UNIT_VLR_ODA_UU_NAME',
+		'LOC_UNIT_VLR_ODA_UU_DESCRIPTION',
+		20);
+
+INSERT INTO PlayerItems	(
+		Domain,
+		CivilizationType,
+		LeaderType,
+		Type,
+		Icon,
+		Name,
+		Description,
+		SortIndex
+		)
+VALUES	('Players:Expansion1_Players',
+		'CIVILIZATION_JAPAN',
+		'LEADER_VLR_ODA',
 		'BUILDING_ELECTRONICS_FACTORY',
 		'ICON_BUILDING_ELECTRONICS_FACTORY',
 		'LOC_BUILDING_ELECTRONICS_FACTORY_NAME',
 		'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION',
-		20);
+		30);
 
 -----------------------------------------------		
 -- Players Expansion2
@@ -220,8 +256,27 @@ INSERT INTO PlayerItems	(
 VALUES	('Players:Expansion2_Players',
 		'CIVILIZATION_JAPAN',
 		'LEADER_VLR_ODA',
+		'UNIT_VLR_ODA_UU',
+		'ICON_UNIT_VLR_ODA_UU',
+		'LOC_UNIT_VLR_ODA_UU_NAME',
+		'LOC_UNIT_VLR_ODA_UU_DESCRIPTION',
+		20);
+
+INSERT INTO PlayerItems	(
+		Domain,
+		CivilizationType,
+		LeaderType,
+		Type,
+		Icon,
+		Name,
+		Description,
+		SortIndex
+		)
+VALUES	('Players:Expansion2_Players',
+		'CIVILIZATION_JAPAN',
+		'LEADER_VLR_ODA',
 		'BUILDING_ELECTRONICS_FACTORY',
 		'ICON_BUILDING_ELECTRONICS_FACTORY',
 		'LOC_BUILDING_ELECTRONICS_FACTORY_NAME',
 		'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION',
-		20);
+		30);

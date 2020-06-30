@@ -10,7 +10,7 @@
 			<Text>Tenka Fubu</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_LEADER_VLR_ODA_UA_DESCRIPTION">
-			<Text>After researching Gunpowder, Samurai units receive +5 Combat Strength. Conquered cities on your continent build Commercial Hub and Theater Square Buildings 50% Faster.</Text>
+			<Text>Conquered cities on your home continent construct [ICON_DISTRICT_COMMERCIAL_HUB] Commercial Hub and [ICON_DISTRICT_THEATER] Theatre Square buildings twice as fast. Gain the Tanegashima Gunner unique unit with Gunpowder, and all Samurai units are automatically upgraded to Tanegashima Gunner when unlocked.</Text>
 		</Row>
 
 		<!--DOM-->
@@ -247,6 +247,29 @@
 		<!--AI Warnings-->
 		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_VLR_ODA_ANY">
 			<Text>You hurt those who rely on you for guidance by withholding your knowledge and experience. How can you be so shameless?</Text>
+		</Row>
+
+		<!--UU-->
+		<Row Tag="LOC_TRAIT_LEADER_VLR_ODA_UU_NAME">
+			<Text>Tanegashima Gunner</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_VLR_ODA_UU_DESCRIPTION">
+			<Text>Unique Renaissance era unit that replaces the Musketman. Gains a [ICON_Strength] Combat Strength bonus against units from earlier eras.</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_VLR_ODA_UU_NAME">
+			<Text>Tanegashima Gunner</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_VLR_ODA_UU_DESCRIPTION">
+			<Text>Unique Renaissance era unit that replaces the Musketman. Gains a [ICON_Strength] Combat Strength bonus against units from earlier eras.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_VLR_ODA_UU_NAME">
+			<Text>Tanegashima Gunner</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_VLR_ODA_UU_DESCRIPTION">
+			<Text>+{1_num} [ICON_Strength] Combat Strength against units from earlier eras.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_VLR_ODA_UU_ESCORTING_MOD_PREVIEW_TEXT">
+			<Text>+7 against units from earlier eras.</Text>
 		</Row>
 	</BaseGameText>
 </GameData>

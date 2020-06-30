@@ -1,0 +1,107 @@
+Starting AssetCooker...
+Argument '--shaders' has been deprecated and is no longer used.
+XLP cook starting...
+D:\Github\Civilization-VI-Oda-Nobunaga\Oda Nobunaga\XLPs\Leader_Mod.xlp
+Opened output file: C:\Users\Darrell\Documents\My Games\Sid Meier's Civilization VI\Mods\Oda Nobunaga\Platforms\MacOS\BLPs/leaders/leader_mod.blp    For XLP: 'D:\Github\Civilization-VI-Oda-Nobunaga\Oda Nobunaga\XLPs\Leader_Mod.xlp'
+Could not load digest key: ''.  Using mod key to sign BLP.
+Starting 'leaders/leader_mod'
+
+****** Log from Geometry: 'japanese_odanobunuga' ********
+--------------
+Geo japanese_odanobunuga Mesh Oda_Armor_Chest_poly : 1 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_BACK_LEFT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_BACK_RIGHT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_FRONT_LEFT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_FRONT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_FRONT_RIGHT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_SIDE_LEFT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Plate_SIDE_RIGHT_poly : 22 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Shoulder_LEFT_poly : 144 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Armor_Shoulder_RIGHT_poly : 212 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_BODY_poly : 256 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_BODY_poly2 : 173 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_BODY_poly3 : 301 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_BODY_poly4 : 65 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_EYES_Glass_poly : 32 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_EYES_poly : 32 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_FACE_poly : 92 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh ODA_FACE_poly2 : 9 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Katana_Sheath02_poly : 86 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Katana_Sheath_poly : 86 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_ShortSword_Sheath_poly : 53 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Teeth_Bottom_poly : 197 vertices removed by tangent merger.
+Geo japanese_odanobunuga Mesh Oda_Teeth_Top_poly : 103 vertices removed by tangent merger.
+
+****** Log from Texture: 'Cornea_AO' ********
+--------------
+Texture 'Cornea_AO' (128x128) is at least 99 percent solid color, but is 64x64 or larger resolution!
+
+****** Log from Texture: 'cornean_baseTexBaked' ********
+--------------
+Texture 'cornean_baseTexBaked' (128x128) is at least 99 percent solid color, but is 64x64 or larger resolution!
+
+****** Log from Texture: 'opac' ********
+--------------
+Texture 'opac' (64x64) is at least 99 percent solid color, but is 64x64 or larger resolution!
+
+****** Log from Animation: 'japanese_odanobunuga_intro' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_attacked' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_declare_war' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_neutral_hello' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_hate_hello' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_defeated' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_neutral_idle' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_neutral_no_gesture' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_neutral_yes_gesture' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_hate_idle' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_hate_no_gesture' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_hate_yes_gesture' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_trans_neutral_attack' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+
+****** Log from Animation: 'japanese_odanobunuga_trans_hate_peaceful' ********
+--------------
+Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
+Load finished for: 'leaders/leader_mod' in 2.416 seconds
+Cook finished for: 'leaders/leader_mod' in 0.006 seconds
+Disk write finished for: 'leaders/leader_mod' in 0.163 seconds
+Cleanup finished for: 'leaders/leader_mod' in 0.051 seconds
+XLP cook completed with success.
+Cook completed in 2.654 seconds
