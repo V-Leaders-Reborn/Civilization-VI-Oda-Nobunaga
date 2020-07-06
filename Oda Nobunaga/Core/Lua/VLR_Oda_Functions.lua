@@ -1,52 +1,8 @@
 --=============================================
--- Owo Gunpowder Switcheroo by SailorCat
+-- Owo Gunpowder by SailorCat
 --=============================================
-ExposedMembers.GameEvents = GameEvents
-
-local tSailorPromotions = {}
-for row in GameInfo.UnitPromotions() do
-table.insert(tSailorPromotions, row.Index)
-end
-
-pSailorXPTransplant = 0;
-local sailorSwitcherooTech		= GameInfo.Technologies["TECH_GUNPOWDER"].Index
-local sailorSwitcherooSamurai	= GameInfo.Units["UNIT_JAPANESE_SAMURAI"].Index
-local sailorSwitcherooGunner	= GameInfo.Units["UNIT_VLR_ODA_UU"].Index
-
-function Sailor_Oda_Switcheroo (pIterUnit, pPlayerUnits)
-						--//// Promotion transplant bucket...
-						local transplantXP = pIterUnit:GetExperience()
-						print(transplantXP)
-						local tTransplants = {}
-						local iNumberofPromos = 0
-						for k, iPromo in ipairs(tSailorPromotions) do
-							if pIterUnit:GetExperience():HasPromotion(iPromo) then
-								table.insert(tTransplants, iPromo)
-								print(iPromo)
-								iNumberofPromos = iNumberofPromos + 1
-							end
-						end
-
-						--//// Experience transplant bucket...
-						local samuraiAlive = true;
-						GameEvents.Sailor_Oda_Gunpowder.Call(pIterUnit, pPlayerUnits, pUnit, samuraiAlive)
-						--[[
-						--//// Unit replacement...
-						local iUnitX, iUnitY = pIterUnit:GetX(), pIterUnit:GetY()
-						pPlayerUnits:Destroy(pIterUnit)
-						samuraiAlive = false;
-						local pUnit = pPlayerUnits:Create(sailorSwitcherooGunner, iUnitX, iUnitY)
-						local pUnitXP = pUnit:GetExperience()
-						print(pUnit)
-
-						--//// Promotion transplant surgery...
-						for k, pPromo in ipairs(tTransplants) do
-							pUnitXP:SetPromotion(pPromo)
-						end
-						print("XP pre: ", pSailorXPTransplant)
-						--//// Experience transplant surgery...
-						GameEvents.Sailor_Oda_Gunpowder.Call(pIterUnit, pPlayerUnits, pUnit, samuraiAlive)]]--
-end
+local sailorGunnerTech	= GameInfo.Technologies["TECH_GUNPOWDER"].Index
+local sailorGunnerUnit	= GameInfo.Units["UNIT_VLR_ODA_UU"].Index
 
 function Sailor_Oda_Gunpowder (player, eTech)
 	local bOdaLeader = false
@@ -57,20 +13,62 @@ function Sailor_Oda_Gunpowder (player, eTech)
 	end
 
 	if bOdaLeader == true then
-		if eTech == sailorSwitcherooTech then
+		if eTech == sailorGunnerTech then
 			local pPlayer = Players[player]
+			local pPlayerCities = pPlayer:GetCities()
 			local pPlayerUnits = pPlayer:GetUnits()
-			for i, pIterUnit in pPlayerUnits:Members() do
-				if pIterUnit then	
-					local pUnitType = pIterUnit:GetType()
-					if pUnitType == sailorSwitcherooSamurai then
-						Sailor_Oda_Switcheroo(pIterUnit, pPlayerUnits)
+			for i, pIterCity in pPlayerCities:Members() do
+				if pIterCity then	
+					local pCityCap = pIterCity:IsOriginalCapital()
+					local pCityOriginalOwner = pIterCity:GetOriginalOwner()
+					print(pCityOriginalOwner)
+					if pCityCap = true and pCityOriginalOwner ~= pPlayer then
+						local iCityX, iCityY = pIterCity:GetX(), pIterCity:GetY()
+						pPlayerUnits:Create(sailorGunnerUnit, iCityX, iCityY)
 					end
 				end
 			end
 		end
 	end
 end
+
+--=============================================
+-- Owo Subjugation by SailorCat
+--=============================================
+local sailorOdaRadius = 10
+
+function Sailor_Oda_Subjugation (newPlayerID, oldPlayerID, newCityID, iCityX, iCityY)
+	local bOdaLeader = false
+	local pPlayerConfig = PlayerConfigurations[newPlayerID]
+	local sLeader = pPlayerConfig:GetLeaderTypeName()
+	if sLeader == 'LEADER_VLR_ODA' then
+		bOdaLeader = true
+	end
+
+	if bOdaLeader == true then
+		newCityID:ChangeLoyalty(33)
+		local iOwner = newCityID:GetOwner()
+		for dx = (sailorOdaRadius * -1), sailorOdaRadius do
+		for dy = (sailorOdaRadius * -1), sailorOdaRadius do
+			local pPlotNearCity = Map.GetPlotXYWithRangeCheck(iCityX, iCityY, dx, dy, sailorOdaRadius);
+			if pPlotNearCity and (pPlotNearCity:GetOwner() == iOwner) then
+				if pPlotNearCity:GetDistrictType() > -1 then
+					local pPlotDistrictType = GameInfo.Districts[pPlotNearCity:GetDistrictType()].DistrictType
+					if pPlotDistrictType == "DISTRICT_CITY_CENTER" then
+						local iPlotX, iPlotY = pPlotNearCity:GetX(), pPlotNearCity:GetY()
+						pBurstCity = Cities:GetCityInPlot(iPlotX, iPlotY)
+						pBurstCity:ChangeLoyalty(33)
+						if iOwner:IsHuman() then
+							Game.AddWorldViewText(iOwner, Locale.Lookup("Loyalty boosted!"), iPlotX, iPlotY, 0)
+						end
+					end
+				end
+			end
+		end
+		end
+	end
+end
+
 --=============================================
 -- Leader Present Detection by SeelingCat
 --=============================================
@@ -87,6 +85,7 @@ end
 if bOdaPresent == true then
     print ("///// Oda detected. Loading lua functions...")
 	Events.ResearchCompleted.Add(Sailor_Oda_Gunpowder)
+	Events.CityConquered.Add(Sailor_Oda_Subjugation)
 else
     print ("///// Oda not detected.")
 end
