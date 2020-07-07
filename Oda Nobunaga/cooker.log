@@ -99,9 +99,9 @@ Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\0
 ****** Log from Animation: 'japanese_odanobunuga_trans_hate_peaceful' ********
 --------------
 Granny animation D:\projects\artdev\Civilization5\Leaders\Japanese_OdaNobunuga\01_Character\Japanese_OdaNobunuga.max (asset from (null)) has 11 track groups, but only 1 were expected for this type of animation.
-Load finished for: 'leaders/leader_mod' in 2.648 seconds
-Cook finished for: 'leaders/leader_mod' in 0.009 seconds
-Disk write finished for: 'leaders/leader_mod' in 0.180 seconds
-Cleanup finished for: 'leaders/leader_mod' in 0.054 seconds
+Load finished for: 'leaders/leader_mod' in 2.406 seconds
+Cook finished for: 'leaders/leader_mod' in 0.007 seconds
+Disk write finished for: 'leaders/leader_mod' in 0.088 seconds
+Cleanup finished for: 'leaders/leader_mod' in 0.045 seconds
 XLP cook completed with success.
-Cook completed in 2.911 seconds
+Cook completed in 2.563 seconds

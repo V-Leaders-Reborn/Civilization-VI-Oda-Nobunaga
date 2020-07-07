@@ -1,37 +1,37 @@
------------------------------------------------
--- Colors
------------------------------------------------
-/*INSERT INTO Colors
-        (Type,								 Color)
-VALUES  ('COLOR_SAILOR_ILMERIA_PRIMARY',	'62,80,140,255'),
-        ('COLOR_SAILOR_ILMERIA_SECONDARY',	'206,83,97,255'),
-		('COLOR_SAILOR_ILMERIA_PRIMARY2',	'79,101,177,255'),
-        ('COLOR_SAILOR_ILMERIA_SECONDARY2',	'138,173,215,255'),
-		('COLOR_SAILOR_ILMERIA_PRIMARY3',	'99,107,132,255'),
-        ('COLOR_SAILOR_ILMERIA_SECONDARY3',	'126,178,186,255');*/
+-- OdaColors
+-- Author: SeelingCat
+--------------------------------------------------------------
 
------------------------------------------------
--- PlayerColors
------------------------------------------------
-INSERT INTO PlayerColors (
-		Type,
-		Usage, 
-		PrimaryColor, 
-		SecondaryColor, 
-		Alt1PrimaryColor, 
-		Alt1SecondaryColor, 
-		Alt2PrimaryColor, 
-		Alt2SecondaryColor, 
-		Alt3PrimaryColor, 
+--------------------------------------------------------------
+--- COLORS
+--------------------------------------------------------------
+
+INSERT OR REPLACE INTO Colors 
+			(Type,											Color)
+VALUES		('COLOR_SC_DARK_WISTERIA',						'131,73,159,255'),
+			('COLOR_SC_LIGHT_PINK',							'255,199,214,255'),
+			('COLOR_SC_LIGHT_GREY',							'211,211,211,255'),
+			('COLOR_SC_DARK_GREEN',							'0,82,0,255');
+
+
+INSERT OR REPLACE INTO PlayerColors
+		(Type,
+		Usage,
+		PrimaryColor,
+		SecondaryColor,
+		Alt1PrimaryColor,
+		Alt1SecondaryColor,
+		Alt2PrimaryColor,
+		Alt2SecondaryColor,
+		Alt3PrimaryColor,
 		Alt3SecondaryColor)
-SELECT	'LEADER_VLR_ODA',
+VALUES	('LEADER_VLR_ODA',
 		'Unique',
-		PrimaryColor, 
-		SecondaryColor, 
-		Alt1PrimaryColor, 
-		Alt1SecondaryColor, 
-		Alt2PrimaryColor, 
-		Alt2SecondaryColor, 
-		Alt3PrimaryColor, 
-		Alt3SecondaryColor
-FROM PlayerColors WHERE Type = 'LEADER_HOJO';
+		'COLOR_STANDARD_WHITE_LT',
+		'COLOR_STANDARD_RED_MD',
+		'COLOR_STANDARD_RED_MD',
+		'COLOR_STANDARD_WHITE_LT',
+		'COLOR_SC_DARK_WISTERIA',
+		'COLOR_SC_LIGHT_PINK',
+		'COLOR_SC_LIGHT_GREY',
+		'COLOR_SC_DARK_GREEN');

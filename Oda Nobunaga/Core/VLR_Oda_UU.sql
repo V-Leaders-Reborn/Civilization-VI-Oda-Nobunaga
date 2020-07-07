@@ -165,3 +165,23 @@ SELECT	'VLR_ODA_REQUIRES_'||UnitType,		'UnitType',		UnitType
 FROM Units WHERE (PrereqTech IN (SELECT TechnologyType FROM Technologies WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL'))
 OR PrereqCivic IN (SELECT CivicType FROM Civics WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL')))
 AND Combat > 0;
+
+CREATE TABLE IF NOT EXISTS Units_XP2 (
+		"UnitType" TEXT NOT NULL,
+		"ResourceMaintenanceAmount" INTEGER NOT NULL DEFAULT 0,
+		"ResourceCost" INTEGER NOT NULL DEFAULT 0,
+		"ResourceMaintenanceType" TEXT,
+		"TourismBomb" INTEGER NOT NULL DEFAULT 0,
+		"CanEarnExperience" BOOLEAN NOT NULL CHECK (CanEarnExperience IN (0,1)) DEFAULT 1,
+		"TourismBombPossible" BOOLEAN NOT NULL CHECK (TourismBombPossible IN (0,1)) DEFAULT 0,
+		"CanFormMilitaryFormation" BOOLEAN NOT NULL CHECK (CanFormMilitaryFormation IN (0,1)) DEFAULT 1,
+		"MajorCivOnly" BOOLEAN NOT NULL CHECK (MajorCivOnly IN (0,1)) DEFAULT 0,
+		"CanCauseDisasters" BOOLEAN NOT NULL CHECK (CanCauseDisasters IN (0,1)) DEFAULT 0,
+		"CanSacrificeUnits" BOOLEAN NOT NULL CHECK (CanSacrificeUnits IN (0,1)) DEFAULT 0,
+		PRIMARY KEY(UnitType),
+		FOREIGN KEY (UnitType) REFERENCES Units(UnitType) ON DELETE CASCADE ON UPDATE CASCADE,
+		FOREIGN KEY (ResourceMaintenanceType) REFERENCES Resources(ResourceType) ON DELETE CASCADE ON UPDATE CASCADE);
+
+INSERT INTO Units_XP2
+		(UnitType,			ResourceMaintenanceAmount,	ResourceCost,	CanEarnExperience,	CanFormMilitaryFormation)
+VALUES	('UNIT_VLR_ODA_UU',	0,							10,				1,					1);

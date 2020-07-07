@@ -19,10 +19,11 @@ function Sailor_Oda_Gunpowder (player, eTech)
 			local pPlayerUnits = pPlayer:GetUnits()
 			for i, pIterCity in pPlayerCities:Members() do
 				if pIterCity then	
-					local pCityCap = pIterCity:IsOriginalCapital()
 					local pCityOriginalOwner = pIterCity:GetOriginalOwner()
 					print(pCityOriginalOwner)
-					if pCityCap = true and pCityOriginalOwner ~= pPlayer then
+					local pCityID = pPlayerCities:FindID(pItercity)
+					print(pCityID)
+					if pCityID:IsOriginalCapital() then -- function expected
 						local iCityX, iCityY = pIterCity:GetX(), pIterCity:GetY()
 						pPlayerUnits:Create(sailorGunnerUnit, iCityX, iCityY)
 					end
@@ -46,25 +47,28 @@ function Sailor_Oda_Subjugation (newPlayerID, oldPlayerID, newCityID, iCityX, iC
 	end
 
 	if bOdaLeader == true then
-		newCityID:ChangeLoyalty(33)
-		local iOwner = newCityID:GetOwner()
+		local pPlayer = Players[newPlayerID]
+		local pPlayerCities = pPlayer:GetCities()
+		local cappedCity = pPlayerCities():Members():FindID(newCityID)
+		--cappedCity:ChangeLoyalty(33)
+		local iOwner = cappedCity:GetOwner() --attempt to index a number value
 		for dx = (sailorOdaRadius * -1), sailorOdaRadius do
-		for dy = (sailorOdaRadius * -1), sailorOdaRadius do
-			local pPlotNearCity = Map.GetPlotXYWithRangeCheck(iCityX, iCityY, dx, dy, sailorOdaRadius);
-			if pPlotNearCity and (pPlotNearCity:GetOwner() == iOwner) then
-				if pPlotNearCity:GetDistrictType() > -1 then
-					local pPlotDistrictType = GameInfo.Districts[pPlotNearCity:GetDistrictType()].DistrictType
-					if pPlotDistrictType == "DISTRICT_CITY_CENTER" then
-						local iPlotX, iPlotY = pPlotNearCity:GetX(), pPlotNearCity:GetY()
-						pBurstCity = Cities:GetCityInPlot(iPlotX, iPlotY)
-						pBurstCity:ChangeLoyalty(33)
-						if iOwner:IsHuman() then
-							Game.AddWorldViewText(iOwner, Locale.Lookup("Loyalty boosted!"), iPlotX, iPlotY, 0)
+			for dy = (sailorOdaRadius * -1), sailorOdaRadius do
+				local pPlotNearCity = Map.GetPlotXYWithRangeCheck(iCityX, iCityY, dx, dy, sailorOdaRadius);
+				if pPlotNearCity and (pPlotNearCity:GetOwner() == iOwner) then
+					if pPlotNearCity:GetDistrictType() > -1 then
+						local pPlotDistrictType = GameInfo.Districts[pPlotNearCity:GetDistrictType()].DistrictType
+						if pPlotDistrictType == "DISTRICT_CITY_CENTER" then
+							local iPlotX, iPlotY = pPlotNearCity:GetX(), pPlotNearCity:GetY()
+							pBurstCity = Cities:GetCityInPlot(iPlotX, iPlotY)
+							pBurstCity:ChangeLoyalty(33)
+							if iOwner:IsHuman() then
+								Game.AddWorldViewText(iOwner, Locale.Lookup("Loyalty boosted!"), iPlotX, iPlotY, 0)
+							end
 						end
 					end
 				end
 			end
-		end
 		end
 	end
 end
@@ -85,7 +89,7 @@ end
 if bOdaPresent == true then
     print ("///// Oda detected. Loading lua functions...")
 	Events.ResearchCompleted.Add(Sailor_Oda_Gunpowder)
-	Events.CityConquered.Add(Sailor_Oda_Subjugation)
+	GameEvents.CityConquered.Add(Sailor_Oda_Subjugation)
 else
     print ("///// Oda not detected.")
 end
