@@ -33,7 +33,7 @@
 				<m_ParamName text="FuzzTint"/>
 			</Element>
 			<Element class="AssetObjects..ObjectValue">
-				<m_ObjectName text="oda_armor_diff"/>
+				<m_ObjectName text="oda_armor_diff_sref_2048"/>
 				<m_eObjectType>TEXTURE</m_eObjectType>
 				<m_ParamName text="BaseColor"/>
 			</Element>
@@ -48,12 +48,12 @@
 				<m_ParamName text="AO"/>
 			</Element>
 			<Element class="AssetObjects..ObjectValue">
-				<m_ObjectName text="Black_Metalness"/>
+				<m_ObjectName text="oda_armor_metal"/>
 				<m_eObjectType>TEXTURE</m_eObjectType>
 				<m_ParamName text="Metalness"/>
 			</Element>
 			<Element class="AssetObjects..ObjectValue">
-				<m_ObjectName text="Black_Gloss"/>
+				<m_ObjectName text="oda_armor_gloss"/>
 				<m_eObjectType>TEXTURE</m_eObjectType>
 				<m_ParamName text="Gloss"/>
 			</Element>

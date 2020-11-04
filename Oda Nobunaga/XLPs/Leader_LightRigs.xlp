@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+    <m_Version>
+        <major>4</major>
+        <minor>0</minor>
+        <build>298</build>
+        <revision>924</revision>
+    </m_Version>
+    <m_ClassName text="LeaderLighting"/>
+    <m_PackageName text="leaders/light_rigs"/>
+    <m_Entries>
+        <Element>
+            <m_EntryID text="Oda_LightRig"/>
+            <m_ObjectName text="Oda_LightRig"/>
+        </Element>
+    </m_Entries>
+    <m_AllowedPlatforms>
+        <Element>WINDOWS</Element>
+        <Element>LINUX</Element>
+        <Element>MACOS</Element>
+        <Element>IOS</Element>
+    </m_AllowedPlatforms>
+</AssetObjects..XLP>
+
