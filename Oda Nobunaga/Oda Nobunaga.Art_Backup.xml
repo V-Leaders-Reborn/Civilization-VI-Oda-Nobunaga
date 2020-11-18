@@ -483,6 +483,7 @@
 		<Element>
 			<libraryName text="LeaderLighting"/>
 			<relativePackagePaths>
+				<Element text="leaders/light_rigs"/>
 			</relativePackagePaths>
 		</Element>
 		<Element>

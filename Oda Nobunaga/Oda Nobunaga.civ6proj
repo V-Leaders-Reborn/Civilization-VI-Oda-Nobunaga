@@ -41,6 +41,9 @@
     <Content Include="Artdefs\Leaders.artdef">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Artdefs\Units.artdef">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Core\Lua\VLR_Oda_Functions.lua">
       <SubType>Content</SubType>
     </Content>
