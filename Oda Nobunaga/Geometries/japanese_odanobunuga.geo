@@ -235,7 +235,7 @@
 <m_Name text="ODA_EYES_Glass_poly"/>
 <m_Groups>
 <Element>
-<m_Name text="Leader_cornea.016"/>
+<m_Name text="Leader_cornea.001"/>
 <m_nFirstPrim>0</m_nFirstPrim>
 <m_nPrims>352</m_nPrims>
 </Element>
@@ -402,6 +402,7 @@
 </Element>
 </m_Meshes>
 <m_Bones>
+<Element text="CN6_ADJUSTMENT_BONE_2"/>
 <Element text="CN6_ADJUSTMENT_BONE_1"/>
 <Element text="GUY"/>
 <Element text="WORLD"/>

@@ -1,37 +1,18 @@
---=============================================
--- Owo Gunpowder by SailorCat
---=============================================
-local sailorGunnerTech	= GameInfo.Technologies["TECH_GUNPOWDER"].Index
-local sailorGunnerUnit	= GameInfo.Units["UNIT_VLR_ODA_UU"].Index
+-- Toypurina_Script_Pass
+-- Author: SeelingCat
+-- DateCreated: 6/10/2020 3:11:04 PM
+--------------------------------------------------------------
+ExposedMembers.GameEvents = GameEvents
 
-function Sailor_Oda_Gunpowder (player, eTech)
-	local bOdaLeader = false
-	local pPlayerConfig = PlayerConfigurations[player]
-	local sLeader = pPlayerConfig:GetLeaderTypeName()
-	if sLeader == 'LEADER_VLR_ODA' then
-		bOdaLeader = true
-	end
+function Sailor_Oda_Magic_Gun (player, sailorGunnerUnit, iCityX, iCityY)
+	local pPlayer = Players[player]
+	local pPlayerUnits = pPlayer:GetUnits()
 
-	if bOdaLeader == true then
-		if eTech == sailorGunnerTech then
-			local pPlayer = Players[player]
-			local pPlayerCities = pPlayer:GetCities()
-			local pPlayerUnits = pPlayer:GetUnits()
-			for i, pIterCity in pPlayerCities:Members() do
-				if pIterCity then	
-					local pCityOriginalOwner = pIterCity:GetOriginalOwner()
-					print(pCityOriginalOwner)
-					local pCityID = pPlayerCities:FindID(pItercity)
-					print(pCityID)
-					if pCityID:IsOriginalCapital() then -- function expected
-						local iCityX, iCityY = pIterCity:GetX(), pIterCity:GetY()
-						pPlayerUnits:Create(sailorGunnerUnit, iCityX, iCityY)
-					end
-				end
-			end
-		end
-	end
+	pPlayerUnits:Create(sailorGunnerUnit, iCityX, iCityY)
+	print ("voila! a gun!")
 end
+
+GameEvents.SAILOR_ODA_SUMMON_GUN.Add(Sailor_Oda_Magic_Gun)
 
 --=============================================
 -- Owo Subjugation by SailorCat
@@ -49,21 +30,21 @@ function Sailor_Oda_Subjugation (newPlayerID, oldPlayerID, newCityID, iCityX, iC
 	if bOdaLeader == true then
 		local pPlayer = Players[newPlayerID]
 		local pPlayerCities = pPlayer:GetCities()
-		local cappedCity = pPlayerCities():Members():FindID(newCityID)
+		local cappedCity = pPlayerCities:FindID(newCityID)
 		--cappedCity:ChangeLoyalty(33)
 		local iOwner = cappedCity:GetOwner() --attempt to index a number value
 		for dx = (sailorOdaRadius * -1), sailorOdaRadius do
 			for dy = (sailorOdaRadius * -1), sailorOdaRadius do
 				local pPlotNearCity = Map.GetPlotXYWithRangeCheck(iCityX, iCityY, dx, dy, sailorOdaRadius);
 				if pPlotNearCity and (pPlotNearCity:GetOwner() == iOwner) then
-					if pPlotNearCity:GetDistrictType() > -1 then
-						local pPlotDistrictType = GameInfo.Districts[pPlotNearCity:GetDistrictType()].DistrictType
-						if pPlotDistrictType == "DISTRICT_CITY_CENTER" then
-							local iPlotX, iPlotY = pPlotNearCity:GetX(), pPlotNearCity:GetY()
-							pBurstCity = Cities:GetCityInPlot(iPlotX, iPlotY)
-							pBurstCity:ChangeLoyalty(33)
-							if iOwner:IsHuman() then
-								Game.AddWorldViewText(iOwner, Locale.Lookup("Loyalty boosted!"), iPlotX, iPlotY, 0)
+					if pPlotNearCity:GetDistrictType() == GameInfo.Districts["DISTRICT_CITY_CENTER"].Index then
+						print ("friendly city found in range")
+						
+						local pFriendlyCityInRange = Cities.GetCityInPlot(pPlotNearCity:GetX(), pPlotNearCity:GetY())
+						if pFriendlyCityInRange ~= nil then
+							pFriendlyCityInRange:ChangeLoyalty(33)
+							if pPlayer:IsHuman() then
+								Game.AddWorldViewText(iOwner, Locale.Lookup("Loyalty boosted!"), pPlotNearCity:GetX(), pPlotNearCity:GetY(), 0)
 							end
 						end
 					end
@@ -88,7 +69,6 @@ for k, v in ipairs(PlayerManager.GetWasEverAliveIDs()) do
 end
 if bOdaPresent == true then
     print ("///// Oda detected. Loading lua functions...")
-	Events.ResearchCompleted.Add(Sailor_Oda_Gunpowder)
 	GameEvents.CityConquered.Add(Sailor_Oda_Subjugation)
 else
     print ("///// Oda not detected.")

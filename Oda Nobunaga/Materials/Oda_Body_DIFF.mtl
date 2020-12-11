@@ -18,7 +18,7 @@
 				<m_ParamName text="Anisotropy"/>
 			</Element>
 			<Element class="AssetObjects..ObjectValue">
-				<m_ObjectName text=""/>
+				<m_ObjectName text="oda_body_tang"/>
 				<m_eObjectType>TEXTURE</m_eObjectType>
 				<m_ParamName text="Tangent"/>
 			</Element>

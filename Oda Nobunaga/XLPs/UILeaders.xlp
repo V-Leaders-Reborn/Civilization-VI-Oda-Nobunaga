@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AssetObjects..XLP>
-	<m_Version>
-		<major>1</major>
-		<minor>0</minor>
-		<build>0</build>
-		<revision>0</revision>
-	</m_Version>
-	<m_ClassName text="UITexture"/>
-	<m_PackageName text="UILeaders"/>
-	<m_Entries>
-		<Element>
-			<m_EntryID text="VLR_ODA_1"/>
-			<m_ObjectName text="VLR_ODA_1"/>
-		</Element>
-		<Element>
-			<m_EntryID text="VLR_ODA_4"/>
-			<m_ObjectName text="VLR_ODA_4"/>
-		</Element>
-	</m_Entries>
-	<m_AllowedPlatforms>
-		<Element>WINDOWS</Element>
-		<Element>LINUX</Element>
-		<Element>MACOS</Element>
-		<Element>IOS</Element>
-	</m_AllowedPlatforms>
+    <m_Version>
+        <major>1</major>
+        <minor>0</minor>
+        <build>0</build>
+        <revision>0</revision>
+    </m_Version>
+    <m_ClassName text="UITexture"/>
+    <m_PackageName text="UILeaders"/>
+    <m_Entries>
+        <Element>
+            <m_EntryID text="VLR_ODA_1"/>
+            <m_ObjectName text="VLR_ODA_1"/>
+        </Element>
+        <Element>
+            <m_EntryID text="VLR_ODA_4"/>
+            <m_ObjectName text="VLR_ODA_4"/>
+        </Element>
+        <Element>
+            <m_EntryID text="LEADER_VLR_ODA_NEUTRAL"/>
+            <m_ObjectName text="LEADER_VLR_ODA_NEUTRAL"/>
+        </Element>
+        <Element>
+            <m_EntryID text="LEADER_VLR_ODA_BACKGROUND"/>
+            <m_ObjectName text="LEADER_VLR_ODA_BACKGROUND"/>
+        </Element>
+        <Element>
+            <m_EntryID text="LEADER_VLR_ODA_SELECT"/>
+            <m_ObjectName text="LEADER_VLR_ODA_SELECT"/>
+        </Element>
+    </m_Entries>
+    <m_AllowedPlatforms>
+        <Element>WINDOWS</Element>
+        <Element>LINUX</Element>
+        <Element>MACOS</Element>
+        <Element>IOS</Element>
+    </m_AllowedPlatforms>
 </AssetObjects..XLP>
 

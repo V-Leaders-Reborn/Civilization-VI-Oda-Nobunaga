@@ -6,7 +6,8 @@
 -----------------------------------------------	
 INSERT INTO Tags
 		(Tag,							Vocabulary)
-VALUES	('CLASS_VLR_ODA_UU',			'ABILITY_CLASS');
+VALUES	('CLASS_VLR_ODA_UU',			'ABILITY_CLASS'),
+        ('CLASS_ANCIENT_TO_MEDIEVAL',   'ABILITY_CLASS');
 
 -----------------------------------------------	
 -- Types
@@ -136,35 +137,38 @@ INSERT INTO RequirementSets
 		(RequirementSetId,					RequirementSetType)
 VALUES	('VLR_ODA_ERA_REQUIREMENTS',		'REQUIREMENTSET_TEST_ANY');
 
+
+-----------------------------------------------
+-- TypeTags
+-----------------------------------------------
+INSERT INTO TypeTags (Type, Tag)
+SELECT UnitType, 'CLASS_ANCIENT_TO_MEDIEVAL'
+FROM Units WHERE (PrereqTech IN (SELECT TechnologyType FROM Technologies WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL'))
+OR PrereqCivic IN (SELECT CivicType FROM Civics WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL')))
+AND Combat > 0;
+
 -----------------------------------------------
 -- RequirementSetRequirements
 -----------------------------------------------
 INSERT INTO RequirementSetRequirements
 		(RequirementSetId,					RequirementId)
-SELECT	'VLR_ODA_ERA_REQUIREMENTS',			'VLR_ODA_REQUIRES_'||UnitType
-FROM Units WHERE (PrereqTech IN (SELECT TechnologyType FROM Technologies WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL'))
-OR PrereqCivic IN (SELECT CivicType FROM Civics WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL')))
-AND Combat > 0;
+VALUES	('VLR_ODA_ERA_REQUIREMENTS',			'VLR_ODA_VERSUS_ANCIENT_TO_MEDIEVAL');
+
 
 -----------------------------------------------
 -- Requirements
 -----------------------------------------------
 INSERT INTO Requirements
 		(RequirementId,						RequirementType)
-SELECT	'VLR_ODA_REQUIRES_'||UnitType,		'REQUIREMENT_OPPONENT_UNIT_TYPE_MATCHES'
-FROM Units WHERE (PrereqTech IN (SELECT TechnologyType FROM Technologies WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL'))
-OR PrereqCivic IN (SELECT CivicType FROM Civics WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL')))
-AND Combat > 0;
+VALUES	('VLR_ODA_VERSUS_ANCIENT_TO_MEDIEVAL',		'REQUIREMENT_OPPONENT_UNIT_TAG_MATCHES');
 
 -----------------------------------------------
 -- RequirementArguments
 -----------------------------------------------
 INSERT INTO RequirementArguments 
 		(RequirementId,						Name,			Value) 
-SELECT	'VLR_ODA_REQUIRES_'||UnitType,		'UnitType',		UnitType
-FROM Units WHERE (PrereqTech IN (SELECT TechnologyType FROM Technologies WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL'))
-OR PrereqCivic IN (SELECT CivicType FROM Civics WHERE EraType IN ('ERA_ANCIENT', 'ERA_CLASSICAL', 'ERA_MEDIEVAL')))
-AND Combat > 0;
+VALUES ('VLR_ODA_VERSUS_ANCIENT_TO_MEDIEVAL', 'Tag', 'CLASS_ANCIENT_TO_MEDIEVAL');
+
 
 CREATE TABLE IF NOT EXISTS Units_XP2 (
 		"UnitType" TEXT NOT NULL,

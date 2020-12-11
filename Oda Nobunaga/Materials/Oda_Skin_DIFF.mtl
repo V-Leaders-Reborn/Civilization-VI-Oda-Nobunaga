@@ -38,7 +38,7 @@
 				<m_ParamName text="FuzzTint"/>
 			</Element>
 			<Element class="AssetObjects..ObjectValue">
-				<m_ObjectName text="oda_skin_diff"/>
+				<m_ObjectName text="oda_skin_diff_sref_add128"/>
 				<m_eObjectType>TEXTURE</m_eObjectType>
 				<m_ParamName text="BaseColor"/>
 			</Element>
