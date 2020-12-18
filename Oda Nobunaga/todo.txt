@@ -1,8 +1,5 @@
-
-Oda 2D Portrait Icon
-
 Unit Portrait
 
-Unit Icon
+Update effects text
 
 Test

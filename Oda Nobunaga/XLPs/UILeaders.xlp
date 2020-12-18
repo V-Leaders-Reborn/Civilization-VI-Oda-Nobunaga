@@ -29,6 +29,58 @@
             <m_EntryID text="LEADER_VLR_ODA_SELECT"/>
             <m_ObjectName text="LEADER_VLR_ODA_SELECT"/>
         </Element>
+        		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_256"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_32"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_45"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_50"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_55"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_64"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_LEADER_VLR_ODA_80"/>
+			<m_ObjectName text="ICON_LEADER_VLR_ODA_80"/>
+		</Element>
+        		<Element>
+			<m_EntryID text="ICON_UNIT_VLR_ODA_UU_22"/>
+			<m_ObjectName text="ICON_UNIT_VLR_ODA_UU_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_VLR_ODA_UU_32"/>
+			<m_ObjectName text="ICON_UNIT_VLR_ODA_UU_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_VLR_ODA_UU_38"/>
+			<m_ObjectName text="ICON_UNIT_VLR_ODA_UU_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_VLR_ODA_UU_50"/>
+			<m_ObjectName text="ICON_UNIT_VLR_ODA_UU_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_VLR_ODA_UU_80"/>
+			<m_ObjectName text="ICON_UNIT_VLR_ODA_UU_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ICON_UNIT_VLR_ODA_UU_256"/>
+			<m_ObjectName text="ICON_UNIT_VLR_ODA_UU_256"/>
+		</Element>
     </m_Entries>
     <m_AllowedPlatforms>
         <Element>WINDOWS</Element>

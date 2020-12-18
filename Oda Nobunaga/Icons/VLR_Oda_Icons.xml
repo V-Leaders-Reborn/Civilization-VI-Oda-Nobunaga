@@ -1,0 +1,29 @@
+<GameInfo>
+    <IconTextureAtlases>
+        <!--Leader-->
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_32.dds"/>
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="45" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_45.dds"/>
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_50.dds"/>
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="55" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_55.dds"/>
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="64" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_64.dds"/>
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_80.dds"/>
+        <Row Name="ICON_ATLAS_LEADER_VLR_ODA" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_LEADER_VLR_ODA_256.dds"/>
+
+        <!--UU-->
+        <Row Name="ICON_ATLAS_VLR_ODA_UU" IconSize="22" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_UNIT_VLR_ODA_UU_22.dds"/>
+        <Row Name="ICON_ATLAS_VLR_ODA_UU" IconSize="32" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_UNIT_VLR_ODA_UU_32.dds"/>
+        <Row Name="ICON_ATLAS_VLR_ODA_UU" IconSize="38" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_UNIT_VLR_ODA_UU_38.dds"/>
+        <Row Name="ICON_ATLAS_VLR_ODA_UU" IconSize="50" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_UNIT_VLR_ODA_UU_50.dds"/>
+        <Row Name="ICON_ATLAS_VLR_ODA_UU" IconSize="80" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_UNIT_VLR_ODA_UU_80.dds"/>
+        <Row Name="ICON_ATLAS_VLR_ODA_UU" IconSize="256" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_UNIT_VLR_ODA_UU_256.dds"/>
+
+        <!--UU Portrait-->
+        <Row Name="ICON_ATLAS_VLR_ODA_UU_PORTRAIT" IconSize="95" IconsPerRow="1" IconsPerColumn="1" Filename="ICON_VLR_ODA_UU_PORTRAIT_95.dds"/>
+    </IconTextureAtlases>
+    <IconDefinitions>
+        <Row Name="ICON_LEADER_VLR_ODA" Atlas="ICON_ATLAS_LEADER_VLR_ODA" Index="0"/>
+
+        <Row Name="ICON_UNIT_VLR_ODA_UU" Atlas="ICON_ATLAS_VLR_ODA_UU" Index="0"/>
+        <Row Name="ICON_UNIT_VLR_ODA_UU_PORTRAIT" Atlas="ICON_ATLAS_VLR_ODA_UU_PORTRAIT" Index="0"/>
+    </IconDefinitions>
+</GameInfo>
