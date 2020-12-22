@@ -68,7 +68,7 @@ for k, v in ipairs(PlayerManager.GetWasEverAliveIDs()) do
     end
 end
 if bOdaPresent == true then
-    print ("///// Oda detected. Loading lua functions...")
+    print ("///// Oda detected. Loading VLR_Oda_Functions Sailor_Oda_Subjugation.")
 	GameEvents.CityConquered.Add(Sailor_Oda_Subjugation)
 else
     print ("///// Oda not detected.")

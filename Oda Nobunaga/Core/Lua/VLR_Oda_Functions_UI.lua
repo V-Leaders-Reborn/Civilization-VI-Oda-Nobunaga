@@ -24,7 +24,9 @@ function Sailor_Oda_Gunpowder (player, eTech)
 			local pPlayerCities = pPlayer:GetCities()
 			for i, pIterCity in pPlayerCities:Members() do
 				if pIterCity then	
-					if pIterCity:IsOriginalCapital() then -- function expected
+					--if pIterCity:IsOriginalCapital() then -- function expected
+					if (pIterCity:GetOriginalOwner() ~= pIterCity:GetOwner()) then --and pIterCity ~= pPlayerCities.GetCapitalCity()
+						print("IsOriginalCapital so create Gunner")
 						local iCityX, iCityY = pIterCity:GetX(), pIterCity:GetY()
 
 						GameEvents.SAILOR_ODA_SUMMON_GUN.Call(player, sailorGunnerUnit, iCityX, iCityY)
@@ -50,7 +52,7 @@ for k, v in ipairs(PlayerManager.GetWasEverAliveIDs()) do
     end
 end
 if bOdaPresent == true then
-    print ("///// Oda detected. Loading lua functions...")
+    print ("///// Oda detected. Loading VLR_Oda_Functions_UI Sailor_Oda_Gunpowder.")
 	Events.ResearchCompleted.Add(Sailor_Oda_Gunpowder)
 else
     print ("///// Oda not detected.")

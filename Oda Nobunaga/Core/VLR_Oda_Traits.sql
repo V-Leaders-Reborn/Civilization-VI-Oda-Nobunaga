@@ -56,5 +56,5 @@ FROM Buildings WHERE BuildingType IN ('BUILDING_WALLS', 'BUILDING_CASTLE', 'BUIL
 
 INSERT INTO ModifierArguments
 		(ModifierId,								Name,				Value)
-SELECT	'VLR_ODA_UA_KABUKIWALLS_'||BuildingType,	'Amount',			1
+SELECT	'VLR_ODA_UA_KABUKIWALLS_'||BuildingType,	'Amount',			2
 FROM Buildings WHERE BuildingType IN ('BUILDING_WALLS', 'BUILDING_CASTLE', 'BUILDING_STAR_FORT');
