@@ -10,9 +10,9 @@ Starting 'units/units'
 --------------
 Geo Samurai_ArmorA Mesh Samurai_ArmorAShape : 5 vertices removed by tangent merger.
 Geo Samurai_ArmorA Mesh KatanaAShape : 13 vertices removed by tangent merger.
-Load finished for: 'units/units' in 0.266 seconds
-Cook finished for: 'units/units' in 0.001 seconds
-Disk write finished for: 'units/units' in 0.739 seconds
+Load finished for: 'units/units' in 0.550 seconds
+Cook finished for: 'units/units' in 0.003 seconds
+Disk write finished for: 'units/units' in 0.805 seconds
 Cleanup finished for: 'units/units' in 0.006 seconds
 XLP cook completed with success.
-Cook completed in 1.033 seconds
+Cook completed in 1.456 seconds

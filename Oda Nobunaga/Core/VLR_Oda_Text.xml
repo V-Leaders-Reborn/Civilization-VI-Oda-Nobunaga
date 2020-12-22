@@ -10,7 +10,7 @@
 			<Text>Tenka Fubu</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_LEADER_VLR_ODA_UA_DESCRIPTION">
-			<Text>Capturing a city provides a burst of loyalty (33%) to all cities within 10 tiles. All Walls produce +2 Culture. Gain the Tanegashima Gunner unique unit with Gunpowder and, upon researching Gunpowder, receive a free Tanegashima Gunner in every original capital you control.</Text>
+			<Text>Capturing a city provides a burst of loyalty (33%) to all cities within 10 tiles. All Walls produce +2 Culture. Gain the Tanegashima Gunner unique unit with Gunpowder and, upon researching Gunpowder, receive a free Tanegashima Gunner in every City you control with a Population of 3 or more.</Text>
 		</Row>
 
 		<!--DOM-->

@@ -9,7 +9,7 @@ function Sailor_Oda_Magic_Gun (player, sailorGunnerUnit, iCityX, iCityY)
 	local pPlayerUnits = pPlayer:GetUnits()
 
 	pPlayerUnits:Create(sailorGunnerUnit, iCityX, iCityY)
-	print ("voila! a gun!")
+	print ("Spawned a Gunner unit!")
 end
 
 GameEvents.SAILOR_ODA_SUMMON_GUN.Add(Sailor_Oda_Magic_Gun)
