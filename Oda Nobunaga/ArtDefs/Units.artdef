@@ -449,9 +449,9 @@
                                                                 <m_ParamName text="Point"/>
                                                             </Element>
                                                             <Element class="AssetObjects:ArtDefReferenceValue">
-                                                                <m_ElementName text=""/>
+                                                                <m_ElementName text="DEFAULT"/>
                                                                 <m_RootCollectionName text="UnitTintTypes"/>
-                                                                <m_ArtDefPath text=""/>
+                                                                <m_ArtDefPath text="Units.artdef"/>
                                                                 <m_CollectionIsLocked>true</m_CollectionIsLocked>
                                                                 <m_TemplateName text=""/>
                                                                 <m_ParamName text="Tint"/>

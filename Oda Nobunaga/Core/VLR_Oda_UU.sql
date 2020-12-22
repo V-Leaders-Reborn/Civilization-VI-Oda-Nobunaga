@@ -189,3 +189,12 @@ CREATE TABLE IF NOT EXISTS Units_XP2 (
 INSERT INTO Units_XP2
 		(UnitType,			ResourceMaintenanceAmount,	ResourceCost,	CanEarnExperience,	CanFormMilitaryFormation)
 VALUES	('UNIT_VLR_ODA_UU',	0,							10,				1,					1);
+
+-----------------------------------------------
+-- Historic Moment Images
+-----------------------------------------------
+CREATE TABLE IF NOT EXISTS MomentIllustrations (MomentIllustrationType VARCHAR, MomentDataType VARCHAR, GameDataType VARCHAR, Texture VARCHAR);
+
+INSERT INTO MomentIllustrations (MomentIllustrationType, MomentDataType, GameDataType, Texture)
+SELECT 	'MOMENT_ILLUSTRATION_UNIQUE_UNIT', 'MOMENT_DATA_UNIT', Type, 'TanGun_HM.dds'
+FROM   Types WHERE Type = 'UNIT_VLR_ODA_UU';
