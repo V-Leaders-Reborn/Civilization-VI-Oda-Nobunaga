@@ -24,8 +24,8 @@ function Sailor_Oda_Gunpowder (player, eTech)
 			local pPlayerCities = pPlayer:GetCities()
 			for i, pIterCity in pPlayerCities:Members() do
 				if pIterCity then
-					if (pIterCity:GetOriginalOwner() ~= pIterCity:GetOwner() and pIterCity:GetPopulation() >= 3) then
-						print("is conquered City of 3 or more Population so spawn Gunner")
+					if pIterCity:IsOriginalCapital() then
+						print("IsOriginalCapital so create Gunner")
 						local iCityX, iCityY = pIterCity:GetX(), pIterCity:GetY()
 
 						GameEvents.SAILOR_ODA_SUMMON_GUN.Call(player, sailorGunnerUnit, iCityX, iCityY)
