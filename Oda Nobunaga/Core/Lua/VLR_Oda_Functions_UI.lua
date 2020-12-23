@@ -23,9 +23,8 @@ function Sailor_Oda_Gunpowder (player, eTech)
 			local pPlayer = Players[player]
 			local pPlayerCities = pPlayer:GetCities()
 			for i, pIterCity in pPlayerCities:Members() do
-				if pIterCity then
-					if pIterCity:IsOriginalCapital() then
-						print("IsOriginalCapital so create Gunner")
+				if pIterCity then	
+					if pIterCity:IsOriginalCapital() then -- function expected
 						local iCityX, iCityY = pIterCity:GetX(), pIterCity:GetY()
 
 						GameEvents.SAILOR_ODA_SUMMON_GUN.Call(player, sailorGunnerUnit, iCityX, iCityY)

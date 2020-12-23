@@ -10,7 +10,7 @@
 			<Text>Tenka Fubu</Text>
 		</Row>
 		<Row Tag="LOC_TRAIT_LEADER_VLR_ODA_UA_DESCRIPTION">
-			<Text>Capturing a city provides a burst of loyalty (33%) to all cities within 10 tiles. All Walls produce +2 Culture. Gain the Tanegashima Gunner unique unit with Gunpowder and, upon researching Gunpowder, receive a free Tanegashima Gunner in every City you control with a Population of 3 or more.</Text>
+			<Text>Capturing a city provides a burst of loyalty (33%) to all cities within 10 tiles. All Walls produce +2 Culture. Gain the Tanegashima Gunner unique unit with Gunpowder and, upon researching Gunpowder, receive a free Tanegashima Gunner in every original capital you control.</Text>
 		</Row>
 
 		<!--DOM-->
@@ -181,24 +181,38 @@
 
 		<!--LEADER AGENDA-->
 		<Row Tag="LOC_AGENDA_VLR_ODA_NAME">
-			<Text>INSERT TEXT HERE</Text>
+			<Text>Great Unifier</Text>
 		</Row>
 		<Row Tag="LOC_AGENDA_VLR_ODA_DESCRIPTION">
-			<Text>Dislikes his neighbours on his own continent, especially if they are weak; likes those from other continents, especially if they have a strong scientific and cultural focus.</Text>
+			<Text>Dislikes neighboring Civilizations, especially if they are weak; likes Civilizations that are further away, especially if they are strong.</Text>
 		</Row>
 
-		<Row Tag="LOC_DIPLO_KUDA_LEADER_VLR_ODA_REASON_HIGH_GREAT">
-			<Text>(You are a distant land of great erudition.)</Text>
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_VLR_ODA_REASON_NEAR_STRONG">
+			<Text>(You are a neighboring nation, but strong enough to defend yourself.)</Text>
 		</Row>
-		<Row Tag="LOC_DIPLO_MODIFIER_VLR_ODA_HIGH_GREAT">
-			<Text>Oda appreciates your distant science and culture.</Text>
+		<Row Tag="LOC_DIPLO_MODIFIER_AGENDA_VLR_ODA_UNIFIER_NEAR_STRONG">
+			<Text>Oda dislikes that you stand in the way of Unification.</Text>
 		</Row>
 
-		<Row Tag="LOC_DIPLO_KUDA_LEADER_VLR_ODA_REASON_LOW_GREAT">
-			<Text>(You are too vulnerable.)</Text>
+		<Row Tag="LOC_DIPLO_WARNING_LEADER_VLR_ODA_REASON_NEAR_WEAK">
+			<Text>(You are a weak neighbor, ripe for the picking.)</Text>
 		</Row>
-		<Row Tag="LOC_DIPLO_MODIFIER_VLR_ODA_LOW_GREAT">
-			<Text>Oda dislikes your pathetic army so near his lands.</Text>
+		<Row Tag="LOC_DIPLO_MODIFIER_AGENDA_VLR_ODA_UNIFIER_NEAR_WEAK">
+			<Text>Oda believes you should be crushed soon in the name of Unification.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_VLR_ODA_REASON_FAR_STRONG">
+			<Text>(You are a strong nation and do not neighbor Japan.)</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_AGENDA_VLR_ODA_UNIFIER_FAR_STRONG">
+			<Text>Oda thinks your strong nation could make a useful ally for Unification.</Text>
+		</Row>
+
+		<Row Tag="LOC_DIPLO_KUDO_LEADER_VLR_ODA_REASON_FAR_WEAK">
+			<Text>(You do not neighbor Japan, but have a weak army.)</Text>
+		</Row>
+		<Row Tag="LOC_DIPLO_MODIFIER_AGENDA_VLR_ODA_UNIFIER_FAR_WEAK">
+			<Text>Oda believes that, while weak, you could play a role in his Unification campaigns.</Text>
 		</Row>
 
 		<!--AI Kudos-->
@@ -207,7 +221,7 @@
 		</Row>
 		<!--AI Warnings-->
 		<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_VLR_ODA_ANY">
-			<Text>If you wish to be a respected leader, I suggest your people begin taking up arms. A weak warlord is soon to be a dead warlord</Text>
+			<Text>If you wish to be a respected leader, I suggest your people begin taking up arms. A weak warlord is soon to be a dead warlord.</Text>
 		</Row>
 
 		<!--UU-->
