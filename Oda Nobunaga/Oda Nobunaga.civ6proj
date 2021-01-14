@@ -2,11 +2,11 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>Oda Nobunaga</Name>
+    <Name>CIVITAS [ICON_GREATPERSON] Oda Nobunaga</Name>
     <Guid>f5303ad1-e358-42fb-a640-2731d8e84ebf</Guid>
     <ProjectGuid>1b047633-d326-401b-a3fa-7ceb0b0440df</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>Adds Oda Nobunaga.</Teaser>
+    <Teaser>Adds Oda Nobunaga as an alternative leader for the Japanese civilization.</Teaser>
     <Description>Adds Oda Nobunaga as an alternative leader of the Japanese civilization.</Description>
     <Authors>Deliverator, Digihuman SailorCat, SeelingCat, Simon</Authors>
     <SpecialThanks>
