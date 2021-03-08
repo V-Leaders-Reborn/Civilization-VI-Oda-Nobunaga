@@ -3,13 +3,13 @@
 --- AGENDAS
 --- Types
 INSERT INTO Types
-			(Type,										Kind)
-VALUES		('TRAIT_AGENDA_VLR_ODA_UNIFIER',			'KIND_TRAIT');
+			(Type,								Kind)
+VALUES		('TRAIT_AGENDA_VLR_ODA_UNIFIER',	'KIND_TRAIT');
 
 --- Agendas
 INSERT INTO Agendas
-			(AgendaType,						Name,										Description)
-VALUES		('AGENDA_VLR_ODA_UNIFIER',			'LOC_AGENDA_VLR_ODA_UNIFIER_NAME',		'LOC_AGENDA_VLR_ODA_UNIFIER_DESCRIPTION');
+			(AgendaType,						Name,							Description)
+VALUES		('AGENDA_VLR_ODA_UNIFIER',			'LOC_AGENDA_VLR_ODA_NAME',		'LOC_AGENDA_VLR_ODA_DESCRIPTION');
 
 --- Traits
 INSERT INTO Traits
@@ -20,6 +20,11 @@ VALUES		('TRAIT_AGENDA_VLR_ODA_UNIFIER',		'LOC_PLACEHOLDER',		'LOC_PLACEHOLDER')
 INSERT INTO AgendaTraits
 			(AgendaType,					TraitType)
 VALUES		('AGENDA_VLR_ODA_UNIFIER',		'TRAIT_AGENDA_VLR_ODA_UNIFIER');
+
+-- Historical Agendas
+INSERT INTO HistoricalAgendas
+			(LeaderType,					AgendaType)
+VALUES		('LEADER_VLR_ODA',				'AGENDA_VLR_ODA_UNIFIER');
 
 --- Exclusive Agendas
 INSERT INTO ExclusiveAgendas

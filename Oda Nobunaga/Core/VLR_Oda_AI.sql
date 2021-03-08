@@ -37,3 +37,8 @@ VALUES	('VLR_Oda_Buildings',		1,			1,			'BUILDING_WALLS'),
 		('VLR_Oda_Techs',			1,			0,			'TECH_MILITARY_TACTICS'),
 		('VLR_Oda_Units',			1,			0,			'UNIT_JAPANESE_SAMURAI'),
 		('VLR_Oda_Units',			1,			0,			'CLASS_VLR_ODA_UU');
+
+-- Favored Religions
+INSERT INTO FavoredReligions	
+		(LeaderType,				ReligionType)
+VALUES	('LEADER_VLR_ODA',			'RELIGION_SHINTO');

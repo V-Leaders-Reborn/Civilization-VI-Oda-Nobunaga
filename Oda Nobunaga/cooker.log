@@ -1,8 +1,8 @@
 Starting AssetCooker...
 Argument '--shaders' has been deprecated and is no longer used.
 XLP cook starting...
-D:\Civ6Mod\gitproject\Civilization-VI-Oda-Nobunaga\Oda Nobunaga\XLPs\Units.xlp
-Opened output file: C:\Users\User\Documents\My Games\Sid Meier's Civilization VI\Mods\Oda Nobunaga\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'D:\Civ6Mod\gitproject\Civilization-VI-Oda-Nobunaga\Oda Nobunaga\XLPs\Units.xlp'
+D:\Github\Civilization-VI-Oda-Nobunaga\Oda Nobunaga\XLPs\Units.xlp
+Opened output file: C:\Users\Darrell\Documents\My Games\Sid Meier's Civilization VI\Mods\Oda Nobunaga\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'D:\Github\Civilization-VI-Oda-Nobunaga\Oda Nobunaga\XLPs\Units.xlp'
 Could not load digest key: ''.  Using mod key to sign BLP.
 Starting 'units/units'
 
@@ -10,9 +10,9 @@ Starting 'units/units'
 --------------
 Geo Samurai_ArmorA Mesh Samurai_ArmorAShape : 5 vertices removed by tangent merger.
 Geo Samurai_ArmorA Mesh KatanaAShape : 13 vertices removed by tangent merger.
-Load finished for: 'units/units' in 0.271 seconds
+Load finished for: 'units/units' in 0.152 seconds
 Cook finished for: 'units/units' in 0.001 seconds
-Disk write finished for: 'units/units' in 0.799 seconds
-Cleanup finished for: 'units/units' in 0.005 seconds
+Disk write finished for: 'units/units' in 0.511 seconds
+Cleanup finished for: 'units/units' in 0.003 seconds
 XLP cook completed with success.
-Cook completed in 1.096 seconds
+Cook completed in 0.679 seconds
